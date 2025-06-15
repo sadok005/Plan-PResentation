@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plan - Présentation PFE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+  <style>
+/* Mobile First */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .container {
+    margin: 1.5rem auto;
+    padding: 0 0.5rem;
+  }
+
+  .card {
+    padding: 1rem 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  ul li {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    :root {
+      --primary: #0056b3;
+      --light: #f9fbfd;
+      --dark: #2d3436;
+      --accent: #00c853;
+      --card-hover: #e3f2fd;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #0056b3 0%, #43a047 100%);
+      color: #fff;
+      padding: 2.5rem 1rem 2rem 1rem;
+      text-align: center;
+      border-radius: 0;
+      box-shadow: 0 4px 18px rgba(0,86,179,0.10);
+      margin-bottom: 2rem;
+      letter-spacing: 1px;
+      border: 2px solid linear-gradient(90deg, #0056b3 0%, #43a047 100%);
+    }
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    }
+    header p {
+      font-size: 1.15rem;
+      opacity: 0.95;
+      margin: 0;
+    }
+
+      @keyframes spin {
+      0% { transform: rotate(0deg);}
+      100% { transform: rotate(360deg);}
+      }
+    
+    .container {
+      max-width: 990px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 0.75rem;
+      margin-bottom: 1.75rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      background-color: var(--card-hover);
+    }
+
+    h2 {
+      display: flex;
+      align-items: center;
+      font-size: 1.4rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    h2 i {
+      margin-right: 10px;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(90deg,#0057b3dd  0%, #43a048d5 100%);
+      color: rgb(0, 0, 0);
+      padding: 0.6rem 2.5rem;
+      text-decoration: none;
+      border-radius: 30px;
+      margin-top: 1rem;
+      margin-right: 1rem;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #f0f0f0
+    }
+
+    footer {
+      background: #f0f0f0;
+    color: #000000; /* Couleur du texte */
+    padding: 49px 0; /* Espacement interne */
+    text-align: center; /* Alignement centralisé */
+    font-size: 20px; /* Taille de police */
+}  
+.card .first-line {
+  font-weight: bold; /* Texte en gras */
+  margin-bottom: 10px; /* Espacement après la première ligne */
+  padding-left: 0px;
+  color: #0056b3; /* Indentation pour la première ligne */
+}
+  </style>
+</head>
+<body>
+
+  <header>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <h1>
+      <span style="display: inline-block; animation: spin 2s linear infinite;">🚀</span>
+      Plan de la Présentation - PFE
+    </h1>
+  
+    <p>Réseaux & Systèmes Informatiques • Année 2024-2025</p>
+  </header>
+
+  <div class="container">
+
+    <div class="card" id="demo">
+      <h2><i class="fa-solid fa-play-circle fa-fade" style="color: #8e24aa;"></i> Démonstration </h2>
+     <p> <i class="first-line"> — </i> <strong>Présentation vidéo en temps réel de :</strong></p>
+      <ul>
+        <li><strong>Introduction (00:00-01:26 Min) </strong></li>
+        <li><strong>Topologie réseau et configuration VPN IPsec (01:27- 0506:30 Min) </strong></li>
+        <li><strong>Activation Syslog sur chaque FortiGate et envoi des logs vers QRadar (06:31-07:47 Min)</strong></li>
+        <li><strong> Simulation de faux login sur FortiGate et détection d’infraction (07:48-16:54 Min)</strong></li>
+        <li><strong>Présentation de la règle personnalisée et Explication du fonctionnement (13:38-16:54 Min)</strong></li>
+        <li><strong>Collecte des logs sur la machine locale Windows (16:55-19:09 Min)</strong></li>
+        <li><strong>Simulation de faux login sur la machine locale et détection d’infraction (19:10-24:55 Min)</strong></li>
+        <li><strong>Automatisation Python pour la surveillance et la gestion du firewall Windows (24:56-29:00)</strong></li>
+        <li><strong>Conclusion (29:01-33:42 Min)</strong></li>
+    </ul>
+    </div>
+</div>
+  </div>
+<footer>
+    <div class="container">
+       <p>Projet de Fin d'Études réalisé par Lamiri Sadok et Sendessni Maram, étudiants à l'ISET de Siliana</p>
+        <div class="icons">
+          <a href="https://github.com/sadok005"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/maram-sendesni-%F0%9F%91%81%EF%B8%8F%E2%80%8D%F0%9F%97%A8%EF%B8%8F-03090429b/ "><i class="fab fa-linkedin"></i></a>
+            
+        </div>
+    </div>
+</footer>
+  
+</body>
+</html>
