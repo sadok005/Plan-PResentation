@@ -144,52 +144,56 @@
 
   <div class="container">
     <div class="card" id="intro">
-      <h2><i class="fa-solid fa-lightbulb fa-bounce" style="color: #fbc02d;"></i>Contexte du Stage</h2>
+      <h2><i class="fa-solid fa-lightbulb fa-bounce" style="color: #fbc02d;"></i>Organisme d'accueil</h2>
       <ul>
-        <li><strong>Centralisation des logs</strong></li>
-        <li><strong>Détection des incidents de sécurité</strong></li>
-        <li><strong>Amélioration de la réponse aux attaques</strong></li>
+        <li><strong>Présentation générale de Network Associates</strong></li>
+        <li><strong>Infrastructure existante</strong></li>
+        <li><strong>Objectifs stratégiques</strong></li>
       </ul>
     </div>
 
-    <div class="card" id="probleme">
-      <h2><i class="fa-solid fa-triangle-exclamation fa-shake" style="color: #e53935;"></i>Problématique</h2>
+   <div class="card" id="probleme">
+      <h2><i class="fa-solid fa-triangle-exclamation fa-shake" style="color: #e53935;"></i>Présentation du projet</h2>
+
       <ul>
-        <li style="white-space: nowrap;"><strong>Volume croissant des données</strong></li>
-        <li><strong>Détection manuelle inefficace</strong></li>
-        <li><strong>Réactivité limitée</strong></li>
+        <li style="white-space: nowrap;"><strong>Problématique & Solution adoptée  </strong></li>
+
+        <li><strong>Méthodologie de travail</strong></li>
+       
+      </ul>
+    </div>
+
+ <div class="card" id="methode">
+      <h2><i class="fa-solid fa-gears fa-spin" style="color: #1976d2;"></i> Cadre technique </h2>
+      <ul>
+        <li><strong> Structure fonctionnelle de la solution </strong></li>
+        <li><strong> Outils utilisés</strong></li>
+        <li><strong>  Notions techniques principale </strong></li>
+        <li><strong> L’infrastructure réseau  </strong></li>
+        <li><strong> Présentation générale d’IBM QRadar </strong></li>
+         <li><strong>  Gestion des incidents avec QRadar </strong></li>
+          <li><strong>  Automatisation des réponses: Scripting Python </strong></li>
+          
       </ul>
     </div>
 
     <div class="card" id="methode">
-      <h2><i class="fa-solid fa-gears fa-spin" style="color: #1976d2;"></i> Cadre technique et implémentation </h2>
+      <h2><i class="fa-solid fa-gears fa-spin" style="color: #1976d2;"></i> Mise en oeuvre et implémentation </h2>
       <ul>
-        <li><strong> Création de l’environnement réseau virtuel sous "EVE-NG" </strong></li>
-        <li><strong> Déploiement de deux pare-feux "FortiGate" simulant deux sites distants</strong></li>
-        <li><strong> Établissement d’un tunnel VPN IPsec Site-to-Site</strong></li>
-        <li><strong> Collecte des logs des FortiGate via "Syslog" vers "IBM QRadar" </strong></li>
-        <li><strong> Collecte des logs Windows via l’agent "WinCollect"</strong></li>
-         <li><strong> Centralisation et corrélation des événements dans "IBM QRadar" </strong></li>
-          <li><strong> Automatisation de la surveillance du pare-feu Windows avec "Python" </strong></li>
-           <li><strong> Réactivation automatique et génération d’alertes en cas de désactivation </strong></li>
+        <li><strong>  Infrastructure réseau : 1/2 </strong></li>
+        <li><strong>  Infrastructure réseau : 2/2 </strong></li>
+        <li><strong> Intégration du SIEM : 1/2</strong></li>
+        <li><strong> Intégration du SIEM : 2/2 </strong></li>
+        <li><strong> Mise en Place d’automatisation : 1/2</strong></li>
+         <li><strong> Mise en Place d’automatisation : 2/2 </strong></li>sss
       </ul>
     </div>
 
-    <div class="card" id="resultats">
-      <h2><i class="fa-solid fa-chart-line fa-beat" style="color: #43a047;"></i>  Résultats et tests </h2>
-      <ul>
-        <li><strong>Centralisation automatisée des journaux d’événements multi-sources</strong></li>
-        <li><strong> Détection proactive des tentatives d’intrusion et incidents de sécurité </strong></li>
-        <li><strong> Visualisation hiérarchisée des alertes dans IBM QRadar </strong></li>
-        <li><strong> Réduction du temps de réponse aux incidents de sécurité </strong></li>
-        <li><strong> Facilitation de l’analyse et accélération de la prise de décision </strong></li>
-      </ul>
-    </div>
 
-    <div class="card" id="demo">
-      <h2><i class="fa-solid fa-play-circle fa-fade" style="color: #8e24aa;"></i> Démonstration </h2>
+  <div class="card" id="demo">
+      <h2><i class="fa-solid fa-play-circle fa-fade" style="color: #8e24aa;"></i> Test - Video Démonstrative </h2>
      <p> <i class="first-line"> — </i> <strong>Présentation vidéo en temps réel de :</strong></p>
-  <ul>
+      <ul>
         <li><strong>Introduction (00:00-01:26 Min) </strong></li>
         <li><strong>Topologie réseau et configuration VPN IPsec (01:27- 0506:30 Min) </strong></li>
         <li><strong>Activation Syslog sur chaque FortiGate et envoi des logs vers QRadar (06:31-07:47 Min)</strong></li>
